@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <p>Please fill out this form to help us improve our site.</p>
+
+    <form>
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Comments -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter comments here."></textarea><br><br>
+
+        <!-- Email -->
+        <label for="email">E-mail Address:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Things You Liked -->
+        <strong>Things you liked:</strong><br>
+        <input type="checkbox" name="liked" value="design"> Site design
+        <input type="checkbox" name="liked" value="links"> Links
+        <input type="checkbox" name="liked" value="ease"> Ease of use
+        <input type="checkbox" name="liked" value="images"> Images
+        <input type="checkbox" name="liked" value="source"> Source code<br><br>
+
+        <!-- How did you get to our site -->
+        <strong>How did you get to our site?:</strong><br>
+        <input type="radio" name="source" value="search"> Search engine
+        <input type="radio" name="source" value="links"> Links from another site
+        <input type="radio" name="source" value="deitel"> Deitel.com Web site
+        <input type="radio" name="source" value="book"> Reference in a book
+        <input type="radio" name="source" value="other"> Other<br><br>
+
+        <!-- Rate our site -->
+        <label for="rate">Rate our site:</label>
+        <select id="rate" name="rate">
+            <option value="amazing">Amazing</option>
+            <option value="10">10</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="awful">Awful</option>
+        </select><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
